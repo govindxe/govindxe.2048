@@ -1,0 +1,33 @@
+.game-container {
+	width: 400px;
+	margin: 40px auto;
+	padding: 20px;
+	background-color: #f0f0f0;
+	border: 1px solid #ddd;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
+}
+
+.grid-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.grid-cell {
+	background-color: #fff;
+	padding: 20px;
+	border: 1px solid #ddd;
+}
+
+.grid-cell:empty::before {
+	content: " ";
+}
+
+.score-container {
+	margin-top: 20px;
+}
